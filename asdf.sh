@@ -49,7 +49,9 @@ asdf() {
   esac
 }
 
-if [ -n "${ZSH_VERSION}" ]; then
-  autoload -U bashcompinit
-  bashcompinit
+if [ "$SHELL" = "/bin/zsh" ]; then
+  if [ -n "${ZSH_VERSION}" ]; then
+    autoload -U bashcompinit
+    bashcompinit
+  fi
 fi
