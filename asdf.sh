@@ -49,7 +49,7 @@ asdf() {
   esac
 }
 
-if [ -n "$ZSH_VERSION" ]; then
+if [ -n "${ZSH_VERSION}" ]; then
   autoload -U bashcompinit
   bashcompinit
 fi
